@@ -1,0 +1,45 @@
+/* Estilize o cabeçalho do site */
+#welcome {
+    background-color: #333; /* Define a cor de fundo do cabeçalho */
+    color: #fff; /* Define a cor do texto no cabeçalho */
+    padding: 20px; /* Adiciona algum espaçamento interno */
+}
+
+#welcome h2 {
+    font-size: 36px; /* Define o tamanho da fonte do título */
+}
+
+/* Estilize a seção de livros à venda */
+#books {
+    margin-top: 20px; /* Adiciona um espaço entre o cabeçalho e a seção de livros */
+}
+
+#books h2 {
+    font-size: 24px; /* Define o tamanho da fonte do título da seção */
+}
+
+/* Estilize a lista de livros */
+#books ul {
+    list-style: none; /* Remove os marcadores de lista padrão */
+    padding: 0; /* Remove o espaçamento interno padrão */
+}
+
+#books li {
+    margin: 10px 0; /* Adiciona espaçamento entre os itens da lista */
+}
+
+#books a {
+    text-decoration: none; /* Remove a sublinhado dos links */
+    color: #0078d4; /* Define a cor dos links */
+}
+
+/* Estilize a linha horizontal */
+hr {
+    border: 0;
+    border-top: 1px solid #ccc; /* Adiciona uma linha horizontal cinza */
+}
+
+/* Estilize os parágrafos de informações */
+#books p {
+    font-size: 18px; /* Define o tamanho da fonte dos parágrafos */
+}

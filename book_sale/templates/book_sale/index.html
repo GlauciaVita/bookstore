@@ -1,20 +1,36 @@
 {% extends 'book_sale/base.html' %}
+{%load static%}
 
 {%block title%}
     All books
 {%endblock%}
 
+{%block css_files%}
+    <link rel="stylesheet" href="{%static "blog/index.css"%}">
+{%endblock%}
+
 
 {%block content%}
-    <ul>
-        {% for book in books %}
-        {% comment %} <li><a href="{% url "book-detail" book.id %}">{{book.title}}</a> (Rating: {{book.rating}})</li> {% endcomment %}
-        <li><a href="{{ book.get_absolute_url }}">{{book.title}}</a> (Rating: {{book.rating}})</li>
-        {% endfor %}
-    </ul>
+
+<section id="welcome">
+    <header>
+        <h2> BOOK SALE</h2>
+    </header>
+</section>
+
+<section id="books">
+    <h2>For Sale</h2>
+        <ul>
+            {% for book in books %}
+            {% comment %} <li><a href="{% url "book-detail" book.id %}">{{book.title}}</a> (Rating: {{book.rating}})</li> {% endcomment %}
+            <li><a href="{{ book.get_absolute_url }}">{{book.title}}</a> (Rating: {{book.rating}})</li>
+            {% endfor %}
+        </ul>
 
     <hr>
 
     <p>Total Number of Books: {{total_number_of_books}}</p>
     <p>Average Rating: {{average_rating.rating__avg}}</p>
+
 {%endblock%}
+
